@@ -23,15 +23,13 @@ ul {
 
 .panel {
     display: grid;
-    grid-template-rows: 20vh 1fr;
+    grid-template-rows: 15vh 6vh 1fr;
 }
 
 .panel-search {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    /* align-items: center; */
-    padding-bottom: 2vw;
     color: white;
 }
 
@@ -62,7 +60,7 @@ ul {
     padding-right: 2vw;
     display: flex;
     align-items: center;
-    gap: 2vw;;
+    gap: 2vw;
 }
 
 .details img {
@@ -73,6 +71,51 @@ ul {
 
 .bell-icon {
     filter: invert();
+}
+
+.panel-extra{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 4vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.extra-name{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.extra-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.button {
+    font-family: Roboto;
+    font-size: 1rem;
+    background-color: #000000;
+    color: #a6a6a6;
+    border: 1px solid #bd251e;
+    padding: 5px;
+}
+
+.button:hover {
+    border: 1px solid rebeccapurple;
+    color: white;
+}
+
+.extra-name img {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem
 }
 
 .panel-lower {
@@ -157,9 +200,13 @@ ul {
 
 }
 
+.primary-links li:nth-child(6) {
+    margin-bottom: 5rem;
+}
+
 .bottom-text {
     position: relative;
-    top: 30vh;
+    top: 25vh;
     align-items: center;
     display: flex;
     justify-content: center;
