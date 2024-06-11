@@ -26,8 +26,53 @@ ul {
     grid-template-rows: 20vh 1fr;
 }
 
+.panel-search {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    /* align-items: center; */
+    padding-bottom: 2vw;
+    color: white;
+}
+
 .search {
-    background-color: lightgreen;
+    padding-left: 2vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.search img {
+    width: 3vw;
+    height: 4vh;
+    filter: invert();
+}
+
+.search-input {
+    width: 90vh;
+    background-color: black;
+    border: 1px solid #bd251e;
+    padding: .4vw;
+    color: white;
+}
+
+.details {
+    padding-right: 2vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;;
+}
+
+.details img {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.bell-icon {
+    filter: invert();
 }
 
 .panel-lower {
@@ -35,7 +80,7 @@ ul {
     grid-template: 1fr / 60vw 1fr;
 }
 
-.projects{
+.projects {
     background-color: beige;
     display: grid;
     gap: 5px;
@@ -43,7 +88,7 @@ ul {
 
 }
 
-.projects > h4 {
+.projects>h4 {
     grid-column: 1 / -1;
     background-color: red;
 }
@@ -61,7 +106,7 @@ ul {
 
 }
 
-.announcements  > h4 {
+.announcements>h4 {
     grid-column: 1 / -1;
     background-color: red;
 }
@@ -95,6 +140,7 @@ ul {
     display: flex;
     flex-direction: column;
 }
+
 .primary-links img {
     width: 3vw;
     height: 4vh;
@@ -109,4 +155,12 @@ ul {
     margin-bottom: 2vh;
     gap: 10px;
 
+}
+
+.bottom-text {
+    position: relative;
+    top: 30vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
