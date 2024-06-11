@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template: 100vh / 20vw 1fr;
+}
+
+.sidebar {
+    background-color: #000000;
+}
+
+.panel {
+    display: grid;
+    grid-template-rows: 20vh 1fr;
+}
+
+.search {
+    background-color: lightgreen;
+}
+
+.panel-lower {
+    display: grid;
+    grid-template: 1fr / 60vw 1fr;
+}
+
+.projects{
+    background-color: beige;
+    display: grid;
+    gap: 5px;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+
+}
+
+.item {
+    outline: 1px solid;
+    margin: 5%;
+}
+
+.announcements {
+    display: grid;
+    background-color: rebeccapurple;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.announce-item {
+    outline: 1px solid;
+
+}
