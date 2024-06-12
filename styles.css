@@ -56,6 +56,11 @@ ul {
     color: white;
 }
 
+.search-input:focus{
+    outline: none;
+    border: 1px solid rebeccapurple;
+}
+
 .details {
     padding-right: 2vw;
     display: flex;
@@ -124,39 +129,76 @@ ul {
 }
 
 .projects {
-    background-color: beige;
     display: grid;
-    gap: 5px;
-    grid-template: 3vh repeat(3, 1fr) / repeat(2, 1fr);
-
+    gap: 1rem;
+    grid-template: 5vh repeat(3, 1fr) / repeat(2, 1fr);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5vh;
 }
 
 .projects>h4 {
     grid-column: 1 / -1;
-    background-color: red;
+    font-size: 2rem;   
+    padding-top: 2%;
 }
 
 .item {
-    outline: 1px solid;
+    outline: 1px solid black;
+    box-shadow: -7px 0px 0px 1px rgba(0,0,0,1);
+    padding: 5%;
+}
 
+.item h2 {
+    padding-bottom: .5rem;
+}
+
+.item-icons {
+    display: flex;
+    margin-left: 80%;
+    padding-top: 4vh;
+    width: 3vw;
+    height: 3vh;
+    gap: 10px;
 }
 
 .announcements {
     display: grid;
-    background-color: rebeccapurple;
-    grid-template-rows: 3vh 1fr 3vh 1fr;
-    gap: 5px;
+    grid-template-rows: 5vh 1fr 3vh 1fr;
+    gap: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5vh;
 
 }
 
-.announcements>h4 {
+.announcements h4 {
     grid-column: 1 / -1;
-    background-color: red;
+    font-size: 2rem;
+    padding-top: 2%;
+}
+
+.announcements h4:nth-child(3) {
+    padding-bottom: 2vh;
 }
 
 .announce-item {
-    outline: 1px solid;
+    outline: 1px solid black;
+    box-shadow: -7px 0px 0px 1px rgba(0,0,0,1);
+    padding: 5%;
+}
 
+.announce-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+
+.trending-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh
 }
 
 .dashboard {
@@ -200,7 +242,7 @@ ul {
 
 }
 
-.primary-links li:nth-child(6) {
+.primary-links li:nth-child(5) {
     margin-bottom: 5rem;
 }
 
