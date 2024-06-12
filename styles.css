@@ -140,7 +140,7 @@ ul {
 .projects>h4 {
     grid-column: 1 / -1;
     font-size: 2rem;   
-    padding-top: 2%;
+    padding-top: 1%;
 }
 
 .item {
@@ -172,7 +172,7 @@ ul {
 
 }
 
-.announcements h4 {
+.announcements>h4 {
     grid-column: 1 / -1;
     font-size: 2rem;
     padding-top: 2%;
